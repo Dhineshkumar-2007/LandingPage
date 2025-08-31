@@ -8,11 +8,7 @@ html {
     background: transparent;
 }       
 body{
-    .poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-    }
+    
 }
 .container *{
     
@@ -32,12 +28,14 @@ body.index{
     flex-direction: column;
     position: relative;
     scroll-behavior: smooth;
+    width: 100%;
+    position: relative;
     
 }
 .navbar{
     display: flex;
-    justify-content:
-     space-around;/*background-color: rgb(222, 236, 16);*/
+    justify-content: space-around;
+     /*background-color: rgb(222, 236, 16);*/
      
     height: 75px;
     margin: 1px;
@@ -55,6 +53,7 @@ body.index{
     color: #773344;
     border: none;
     background: transparent;
+    align-items: center;
 }
 .logo h1{
     width: 70px;
@@ -191,64 +190,98 @@ ul a{
     font-size: larger;
 
 }
-
+body.contactpage{
+    
+    
+    
+background-color:#9e9e9e;
+color: #ffc482;
+     border: none;
+     padding: 30px;
+}
 .contact-container{
    display: flex;
    flex-direction: column;
    scroll-behavior: smooth;
     
     align-items: center;
-    
-    background-color:#B17F59;
-
+    color: #ffc482;
+    background-color:rgb(219, 219, 219);
+color: #d2a226;
      border: none;
-     padding: 30px;
+     
     
 
 
 }
 .contact-ustitle{
-    font-size:90px;
-   
-    color: #EDE8DC;
-}
-.contact-details-label{
-    font-size: 70px;
-   color: #EDE8DC;
-    font-weight: bolder;
+    font-size:70px;
+    color: #d2a226;
 }
 .contact-container *{
    
     
 
 }
-.large-text{
-    text-align: center;
-}
 .contact-details{
     width: 100%;
-    height: 400px;
+    min-height: 400px;
    /* border: 5px solid rgb(49, 245, 0);*/
     display: flex;
     flex-direction: row;
     border: none;
     flex-wrap: wrap;
     padding-top: 30px;
-    gap: 10px;
-    justify-content: center;
+    justify-content: space-around;
     margin-bottom: 25px;
-    background-color: #C1CFA1;
-    border-radius: 20px;
+    font-size: 30px;
+    padding-left: 10px;
+    margin-top: 30px;
     
 }
-.contact-address{
+.contact-details-conainer{
+    
+
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    min-height: 500px;
+    font-size: 40px;
+
+}
+.contact-details-conainer *{
+    gap: 30px;
+    margin-bottom: 24px;
+}
+.contact-details-img{
+    width: 30%;
+    height: 400px;
+}
+.contact-details-img img{
+    width: 250px;
+    height: 250px;
+}
+.whatsapp-btn{
+    width: 150px;
+    height: 60px;
+    background-color: rgb(64, 235, 64);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.address-container{
     width: 100%;
     height: 250px;
    /* border: 5px solid rgb(184, 46, 46);*/
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     border: none;
-    justify-content: center;
+    justify-content:space-around;
     align-items: center;
     margin-top: 30px;
     
@@ -262,38 +295,67 @@ ul a{
     padding-top: 5px;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-      background-color: #C1CFA1;
-    border-radius: 20px;
     
 }
+
+.address-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 245px;
+    width: 50%;
+    
+}
+.address-img img{
+    width: 250px;
+    height: 205px;
+}
+
 .address h1{
-    margin-top: 0px;
+    margin-top: 20px;
+    font-size: 80px;
+    width: 100%;
+    text-wrap: nowrap;
+    text-align: center;
 }
 .address p{
     
-    font-size: xx-large;
-    color: #459391;
-    padding-top: 10px;
+    font-size: 40px;
+    color: #d2a226;
+    padding-top: 30px;
     width: 80%;
     padding-left: 20px;
 }
-.address-map{
-    width: 50%;
+.address-map-container{
+    width: 100%;
     height: 245px;
    /* border: 2px solid rgb(143, 7, 255);*/
-     background-color: #C1CFA1;
-    border-radius: 20px;
+   margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
 }
 .address-map iframe{
-    border-radius: 30px;
+    border-radius: 10px;
+}
+.map-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.map-img img{
+    width: 250px;
+    height: 250px;
 }
 .contact-details .mid-text{
     font-size: xx-large;
     font-weight: 900;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 20px;
-    color: #EDE8DC;
+    color: #d2a226;
     padding-left: 30px;
     
 }
@@ -301,7 +363,7 @@ ul a{
     font-size:55px ;
     font-weight: 900;
     font-family: monospace;
- color: #EDE8DC;
+    color: #d2a226;
     padding: 30px;
     margin-bottom: 20px;
 }
@@ -312,51 +374,72 @@ ul a{
    /* border: 5px solid rgb(240, 20, 123);*/
     display: flex;
     margin-top: 20px;
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(15px);
+    
     border: none;
-   color: #EDE8DC;
+    color: #d2a226;
     font-weight: bolder;
     font-size: xx-large;
     justify-content: center;
-      background-color: #C1CFA1;
-    border-radius: 20px;
+    align-items: center;
+   
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
 }
 .input-name,.input-num,.input-mail{
-    width: 280px;
-    height: 50px;
+    width: 480px;
+    height: 45px;
     border-radius: 20px;
     margin-top: 50px;
+    border: #000 solid 1px;
+    background-color: lightgray;
     
     /*border: 2px solid black;*/
 }
+.input-name,.input-num,.input-mail ::after{
+    border: #000 solid 1px;
+    
+}
 .input-msg{
-    width: 280px;
-    height: 45px;
+    width: 480px;
+    height: 150px;
     border-radius: 20px;
-    margin-top: 70px;
+
+    border: #000 solid 1px;
+    background-color: lightgray;
     
 }
 .input-name::placeholder{
-    color: #EDE8DC;
+    color: #d2a226;
     font-size: large;
     font-style: italic;
+    text-align: center;
+
 }
 .input-num,::placeholder{
-    color: #EDE8DC;
+    color: #d2a226;
     font-size: large;
     font-style: italic;
+    text-align: center;
+  
+
 }
 .input-mail::placeholder{
     font-size: large;
     font-style: italic;
-    color: #EDE8DC;
+    color: #d2a226;
+    text-align: center;
+
 }
 .input-msg::placeholder{
     font-size: large;
     font-style: italic;
-    color: #EDE8DC;
+    color: #d2a226;
+    text-align: center;
 }
 
 label{
@@ -367,7 +450,7 @@ label{
     height: 60px;
     color: rgb(0, 0, 0);
     border-radius: 30px;
-    background-color:#B17F59;
+    background-color: #d2a226;
     border: none;
     font-size: large;
     margin-top: 15px;
@@ -383,7 +466,7 @@ label{
     flex-direction: column;
     color: #f8f0fb;
     padding: 0px; 
-    background-color: rgb(65, 65, 65);
+    background-color: #030303;
     scroll-behavior: smooth;
     -webkit-backdrop-filter: blur(50px);
     backdrop-filter: blur(10px);
@@ -435,7 +518,7 @@ label{
     justify-content: space-around;
     padding: 15px;
     background-color: #1a1a1a;
-    box-shadow: 10px 10px 20px rgba(110, 107, 107, 0.5);
+   /* box-shadow: 10px 10px 20px rgba(110, 107, 107, 0.5);*/
 }
 .fabric-2{
     width: 20%;
@@ -448,8 +531,7 @@ label{
     justify-content: space-around;
     padding: 15px;
     background-color: #1a1a1a;
-    box-shadow: 10px 10px 20px rgba(110, 107, 107, 0.5);
-    
+   
     
 }
 .fabric-3{
@@ -463,8 +545,7 @@ label{
     justify-content: space-around;
     padding: 15px;
     background-color: #1a1a1a;
-    box-shadow: 10px 10px 20px rgba(110, 107, 107, 0.5);
-    
+ 
     
 }
 .fabric-4{
@@ -478,7 +559,6 @@ label{
     justify-content: space-around;
     padding: 15px;
     background-color: #1a1a1a;
-    box-shadow: 10px 10px 20px rgba(110, 107, 107, 0.5);
     
 }
 .pricing{
@@ -494,7 +574,7 @@ label{
 .price-elements{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     margin-bottom: 20px;
     color: rgb(218, 218, 218);
@@ -520,7 +600,7 @@ label{
     align-items: center;
     margin-right: 10px;
     justify-content: space-evenly;
-    box-shadow: 10px 10px 20px rgba(110, 107, 107, 0.5);
+  
     
 }
 .price-2{
@@ -535,7 +615,7 @@ label{
     align-items: center;
     margin-left: 10px;
     justify-content: space-evenly;
-    box-shadow: 10px 10px 20px rgba(110, 107, 107, 0.5);
+  
 }
 
 .price-3{
@@ -550,17 +630,18 @@ label{
     justify-content: space-evenly;
     margin-left: 10px;
     width: 30%;
-    box-shadow: 20px 20px 20px rgba(110, 107, 107, 0.5);
-
+   
 }
 .price-color{
     text-align: center;
 }
 .price-description{
-    font-size: xx-large;
-    width: 75%;
+    font-size: large;
+    width: 80%;
     text-align: center;
+    letter-spacing: 2px;
 }
+
 .price-tagline{
     
     text-align: center;
@@ -568,17 +649,17 @@ label{
 }
 .price-small{
     color: white;
-    font-size: 50px;
+    font-size: 30px;
     letter-spacing: 5px;
 }
 .price-mid{
     color: white;
-    font-size: 50px;
+    font-size: 30px;
     letter-spacing: 5px;
 }
 .price-large{
     color: white;
-    font-size: 50px;
+    font-size: 30px;
     letter-spacing: 5px;
 }
 .reviews{
@@ -587,5 +668,43 @@ label{
     border:  2px solid rgb(255, 255, 255);
     display: none;
 }
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: #d2a226;
+    color: #f5e9e2;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer h1{
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+.footer h2{
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+@media only screen and  (max-width:728px){
+    .index{
+        width: 100%;
+        background-color: #030303;
+    }
+    .container{
+      width: 100%;  
 
+    }
+    .navbar ul{
+        display: none;
+    }
+    .logo{
+        justify-content: start;
+    }
+    
+}
 
