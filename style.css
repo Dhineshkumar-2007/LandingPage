@@ -271,8 +271,12 @@ color: #d2a226;
     color: white;
     border: none;
     border-radius: 30px;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bolder;
+    text-decoration: none;
+}
+.contact-details-conainer a{
+    text-decoration: none;
 }
 .address-container{
     width: 100%;
